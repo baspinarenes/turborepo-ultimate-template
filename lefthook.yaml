@@ -1,0 +1,14 @@
+# Build commit messages
+prepare-commit-msg:
+  commands:
+    commitizen:
+      interactive: true
+      run: npx cz --hook
+      env:
+        LEFTHOOK: "0"
+
+# Validate commitmessages
+commit-msg:
+  commands:
+    "lint commit message":
+      run: npx commitlint --edit {1}
