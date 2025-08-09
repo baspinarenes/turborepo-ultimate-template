@@ -4,7 +4,7 @@
 pnpm dlx create-turbo@latest -e https://github.com/baspinarenes/turborepo-empty-template
 ```
 
-## Setup
+## Workspace Setup
 
 ### 1. Lefthook
 
@@ -34,7 +34,7 @@ turbo gen workspace
 
 ? What type of workspace should be added? package
 ? What is the name of the package? eslint-config
-? Where should "eslint-config" be added? (packages/eslint-config) <enter>
+? Where should "eslint-config" be added? packages/eslint-config
 ```
 
 ```bash
@@ -45,3 +45,17 @@ pnpm add -D \
 ```
 
 You can look at [example eslint package](https://github.com/vercel/turborepo/tree/main/examples/basic/packages/eslint-config) for details.
+
+## App Setup
+
+### 1. Web
+
+```bash
+cd apps/
+
+npx sv create web
+? Which template would you like? SvelteKit minimal
+? Add type checking with TypeScript? Yes, using TypeScript syntax
+? What would you like to add to your project? <enter>
+? Which package manager do you want to install dependencies with? pnpm
+```
