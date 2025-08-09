@@ -46,6 +46,20 @@ pnpm add -D \
 
 You can look at [example eslint package](https://github.com/vercel/turborepo/tree/main/examples/basic/packages/eslint-config) for details.
 
+### 3. UI Library
+
+```bash
+cd packages
+
+npx sv create
+
+? Where would you like your project to be created? ui
+? Which template would you like? Svelte library
+? Add type checking with TypeScript? Yes, using TypeScript syntax
+? What would you like to add to your project? none
+? Which package manager do you want to install dependencies with? pnpm
+```
+
 ## App Setup
 
 ### 1. Web
